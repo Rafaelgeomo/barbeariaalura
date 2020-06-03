@@ -186,7 +186,7 @@ td, th {
 
 .mapa {
     padding: 3em 0;
-    background: ;
+    background: linear-gradient(#FEFEFE, #888888) ;
 }
 
 .mapa-conteudo {
@@ -202,7 +202,6 @@ td, th {
 .beneficios {
     padding: 3em 0;
     background-color: #888888;
-
 }
 
 .itens {
@@ -212,6 +211,10 @@ td, th {
 /*first-child= de todos da lista vai pegar o primeiro / last-child= pega o ultimo / nth-child()=dentro do parenteses coloca o numero q vc quer destacar, e se colocar o numero ex. 2n pega todos os numero pares*/
 .itens:first-child {
     font-weight: bold;
+}
+
+.itens:before{
+    content: "★";
 }
 
 .conteudo-beneficios {
@@ -227,6 +230,12 @@ td, th {
 
 .imagem-beneficios {
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #000000;
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
 }
 
 .video {
@@ -234,10 +243,13 @@ td, th {
     margin: 2em auto;
 }
 
+/* main > p { Seletor >, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os p dentro de main*/
 
+/* img + p { Seletor +, para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro p após um img: */
 
+/* img ~ p { Seletor ~, para acessar todos os irmãos de determinado elemento. Por exemplo, para acessar todos os p após um img: */
 
-
+/* .principal p:not(#missao) { Seletor not, para acessar os elementos, exceto algum. Por exemplo, para acessar todos os p dentro de main, exceto o p que tem id missao: */
 
 /*quando temos duas tags, ele tem o dropo da força do seletor
 Ex. p {} - força 1
