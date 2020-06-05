@@ -243,6 +243,135 @@ td, th {
     margin: 2em auto;
 }
 
+@media (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos {
+        width: auto;
+    }
+    .produtos img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .produtos li {
+        width: 125px;
+    }
+
+    .produto-descricao {
+        font-size: 15px;
+    }
+    
+    .produto-preco {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .produtos h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .produtos li:hover h2 {
+        font-size: 25px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+    }
+    
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos {
+        width: auto;
+    }
+    .produtos img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .produtos li {
+        width: 170px;
+    }
+
+    .produto-descricao {
+        font-size: 18px;
+    }
+    
+    .produto-preco {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .produtos h2 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .produtos li:hover h2 {
+        font-size: 30px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+    }
+      
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
+
+@media (min-width: 870px) {
+    nav {
+        position: absolute;
+    }
+}
+
+@media (min-width: 1024px) {
+    .produtos img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .produtos li {
+        width: 170px;
+    }
+
+    .produto-descricao {
+        font-size: 18px;
+    }
+    
+    .produto-preco {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .produtos h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .produtos li:hover h2 {
+        font-size: 25px;
+    }
+
+}
+
 /* main > p { Seletor >, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os p dentro de main*/
 
 /* img + p { Seletor +, para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro p após um img: */
